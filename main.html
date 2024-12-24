@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body{
 			font-family: Arial,sans-serif;
@@ -30,7 +31,7 @@
 	<script>
 		function updatestatus(){
 			const statusElement = document.getElementById("status");
-			statusElement.outerHTML='<h1 id="status">Entered Metaverse</h1>';
+			statusElement.innerHTML='<h1>Entered Metaverse</h1>';
 			
 		}
 		document.getElementById('enterBtn').addEventListener('click',updatestatus);
